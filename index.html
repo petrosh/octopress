@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Octopress Custom</title>
+  <title>Home - Octopress Custom</title>
   <meta name="author" content="petrosh">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content=" Markdown? ok Recent Posts Deploy GitHub Repos Status updating... @petrosh on GitHub ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -57,50 +56,21 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/octopress/">Blog</a></li>
-  <li><a href="/octopress/blog/archives">Archives</a></li>
+  <li><a href="/octopress/">Home</a></li>
+  <li><a href="/octopress/blog">Blog</a></li>
 </ul>
 
 </nav>
   <div id="main">
     <div id="content">
       <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/octopress/blog/2017/08/26/deploy/">Deploy</a></h1>
-    
-    
-      <p class="meta">
-        
+  <article>
 
+<h1>Markdown?</h1>
 
+<blockquote><p>ok</p></blockquote>
 
-
-<time class='entry-date' datetime='2017-08-26T17:28:25+02:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>5:28 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/octopress/blog/archives">Blog Archives</a>
-    
-  </div>
+  </article>
 </div>
 <aside class="sidebar">
   
@@ -113,6 +83,35 @@
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/petrosh">@petrosh</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'petrosh',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/octopress/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -137,16 +136,6 @@
 
 
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 

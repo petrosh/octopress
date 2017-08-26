@@ -10,7 +10,7 @@
 
   
   <meta name="description" content=" Blog Archive 2017 Deploy
-Aug 26 2017 posted in meta Recent Posts Deploy ">
+Aug 26 2017 posted in meta Recent Posts Deploy GitHub Repos Status updating... @petrosh on GitHub ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ Aug 26 2017 posted in meta Recent Posts Deploy ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://petrosh.github.io/octopress/blog/archives/">
+  <link rel="canonical" href="http://petrosh.github.io/octopress/blog/">
   <link href="/octopress/favicon.png" rel="icon">
   <link href="/octopress/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/octopress/atom.xml" rel="alternate" title="Octopress Custom" type="application/atom+xml">
@@ -57,8 +57,8 @@ Aug 26 2017 posted in meta Recent Posts Deploy ">
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/octopress/">Blog</a></li>
-  <li><a href="/octopress/blog/archives">Archives</a></li>
+  <li><a href="/octopress/">Home</a></li>
+  <li><a href="/octopress/blog">Blog</a></li>
 </ul>
 
 </nav>
@@ -111,6 +111,35 @@ Aug 26 2017 posted in meta Recent Posts Deploy ">
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/petrosh">@petrosh</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'petrosh',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/octopress/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
 
 
 
@@ -134,16 +163,6 @@ Aug 26 2017 posted in meta Recent Posts Deploy ">
 
 
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 
