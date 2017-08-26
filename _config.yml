@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://petrosh.github.io/octopress
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Octopress Custom
+subtitle: Custom deploy of the framework.
+author: petrosh
 simple_search: https://www.google.com/search
 description:
 
