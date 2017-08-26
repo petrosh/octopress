@@ -19,3 +19,8 @@ If `root: /octopress` in `_config.yml`
 
 1. `rake preview`
 2. open `http://localhost:4000/octopress`
+
+**New**
+
+1. `rake new_post["title"]`
+1. `rake new_page["title"]`
