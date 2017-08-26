@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://petrosh.github.io/octopress/sitemap.xml 
